@@ -1,0 +1,63 @@
+/* Basic Reset */   
+
+/* This CSS rule applies to all elements on the page */
+* { 
+
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box; /* Ensures padding and border are included in the element's total width and height */
+    /* Important for consistent layout and sizing */
+
+}
+
+body{
+    
+    background-color: #e5fadc; 
+    display: flex; /* Use flexbox for layout */
+    justify-content: center; /* Center content horizontally can use 'jcc' */
+    align-items: center; /* Center content vertically can use 'aic' */
+    min-height: 100vh; /* Ensure the body takes at least the full viewport height */
+    padding: 1rem; /* Add padding around the content */
+
+
+}
+
+.container{ /* uses class "container" to style the main content area */
+    
+    background-color: rgb(252, 252, 252); /* shortcut */
+    border-radius: 1rem; /* Rounded corners for a softer look */
+    /* 1rem = ~16px */
+
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+    width: 100%; /* Full width of the parent container */
+    max-width: 600px; /* Limit the maximum width of the container */
+    overflow: hidden; /* Hide any overflowing content */
+    position: relative; /* Positioning context for child elements */
+
+}    
+
+/* Screens */
+
+.screen {
+
+    display:none;
+    padding: 2rem;
+    text-align: center;
+
+}
+
+.screen.active { /* Show the active screen */
+    
+    display: block; /* Display the active screen */
+
+}
+
+/* START */
+
+#start_screen h1 { /* Style for id "start_screen" */
+   
+    color: rgb(0, 255, 64);
+    margin-bottom: 20px;
+    font-size: 2.5rem; 
+
+}
