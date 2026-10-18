@@ -10,59 +10,62 @@
 
     <div class="container">
 
-    <div class="intro-page"> <!-- Intro page -->
+    <div class="intro_page"> <!-- Intro page -->
 
         <div class="screen active" id="start_screen">
             <h1>Quiz Start!</h1>
             <p>Test your knowledge!</p>
             
-            <button id="start-btn">Start Now</button>
+            <button id="start_btn">Start Now</button>
 
          </div>
 
     </div>
 
-    <div class="screen" id="quiz-screen"> <!-- Quiz screen -->
+    <div class="screen" id="quiz_screen"> <!-- Quiz screen -->
 
-        <h2 id="question-text">Question here</h2>
-        <div class="quiz-info"
+        <h2 id="question_text">Question here</h2>
+        <div class="quiz_info">
         
         <p>
-            Question <span id="current-question">1</span> of <span id="total-questions">5</span>
+            Question <span id="current_question">1</span> of <span id="total_questions">5</span>
         </p>
 
-        <p>Score: <span id="current-score">0</span></p>
+        <p>Score: <span id="current_score">0</span></p>
 
 
         </div>
 
-        <div id="answer-container" class="answer-container">
+        <div id="answer_container" class="answer_container">
             <!-- Answer buttons will be inserted with Js code -->
         </div> 
 
-        <div class="progress-bar">
+        <div class="progress_bar">
             <div class="progress" id="progress"></div>
-        </div>
-
-
-
-        <div id="result-screen" class="screen"> <!-- Result screen -->
-            
-            <h1>Results!</h1>
-            <div class="result-info">
-                <p>Scored <span id="final-score">0</span> out of <span id="max-score">5</span></p>
-            </div>
-
-            <div id="result-message"> Good job! </div>
+            <overflow></overflow>
 
         </div>
 
-         <button id="restart-btn">Restart Quiz</button>
 
 
+        </div>
+
+    <div id="result_screen" class="screen"> <!-- Result screen -->
+        
+        <h1>Results!</h1>
+        <div class="result_info">
+            <p>Scored <span id="final_score">0</span> out of <span id="max_score">5</span></p>
+        </div>
+
+        <div id="result_message"> Good job! </div>
+
+        <button id="restart_btn">Restart Quiz</button>
     </div>
 
     </div>
     
-</body>
+
+    <script src="script.js"></script>
+ </body>
+
 </html>
